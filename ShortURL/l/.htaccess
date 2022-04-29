@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+</IfModule>
+
+RewriteCond $1 !^(get.php) 
+RewriteRule ^(.*)$ get.php?test=$1 [L]
