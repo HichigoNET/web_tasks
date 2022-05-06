@@ -24,6 +24,7 @@ body{
     }
   .snow path{
     stroke-width: 3;
+    /* animation-name: all_str; */
     animation-name:all_str_snow ,snowt;
     animation-direction: normal,normal;
     animation-duration:4s;
