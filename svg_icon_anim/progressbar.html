@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circle</title>
+</head>
+<body>
+    <svg
+    id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   width="200" height="200" viewBox="0 0 120 120" >
+        <rect width="100%" height="100%" fill="#D0D0D0" />
+        <circle cx="60" cy="60" r="50" fill="none" stroke-width="8"stroke="#ffec00"/>
+        <circle cx="60" cy="60" r="50" fill="none" stroke-width="8"
+        transform="rotate(-90 60 60)"
+        stroke-dashoffset ="314" stroke-dasharray="314" stroke="dodgerblue">
+        <animate attributeName="stroke-dashoffset" dur="5s" begin="svg1.click" values="314;0" />
+        </circle>
+        <text id="count" x="50%" y="50%" fill="#717171" text-anchor="middle" dy="7" font-size="20" >Click1</text>
+    </svg>
+    <svg
+    id="svg2"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   width="200" height="200" viewBox="0 0 120 120" >
+        <rect width="100%" height="100%" fill="#D0D0D0" />
+        <circle cx="60" cy="60" r="50" fill="none" stroke-width="8"stroke="#ffec00"/>
+        <circle cx="60" cy="60" r="50" fill="none" stroke-width="8"
+        transform="rotate(-90 60 60)"
+        stroke-dashoffset="314" stroke-dasharray="0, 314" stroke="dodgerblue">
+        <animate attributeName="stroke-dasharray" dur="5s" begin="svg2.click" values="0, 314;314,0 " fill="freeze" />
+        </circle>
+        <text id="count" x="50%" y="50%" fill="#717171" text-anchor="middle" dy="7" font-size="20" >Click2</text>
+    </svg>
+    <svg
+    id="svg3"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   width="200" height="200" viewBox="0 0 120 120" >
+        <rect width="100%" height="100%" fill="#D0D0D0" />
+        <circle cx="60" cy="60" r="50" fill="none" stroke-width="8"stroke="#ffec00"/>
+        <circle cx="60" cy="60" r="50" fill="none" stroke-width="8"
+        transform="rotate(-90 60 60)"
+        stroke-dashoffset ="157"  stroke="dodgerblue" stroke-dasharray=" 0,157 0, 157">
+        <animate attributeName="stroke-dasharray" dur="5s" begin="svg3.click" values="0 157, 0,157;0,0 314,0" />
+        </circle>
+        <text id="count" x="50%" y="50%" fill="#717171" text-anchor="middle" dy="7" font-size="20" >Click3</text>
+    </svg>
+    <svg
+    id="svg4"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   width="200" height="200" viewBox="0 0 120 120" >
+        <rect width="100%" height="100%" fill="#D0D0D0" />
+        <circle cx="60" cy="60" r="50" fill="none" stroke-width="8"stroke="#ffec00"/>
+        <circle cx="60" cy="60" r="50" fill="none" stroke-width="8"
+        transform="rotate(-90 60 60)"
+        stroke-dashoffset ="314"  stroke="dodgerblue" stroke-dasharray=" 31.4, 31.4">
+        <animate attributeName="stroke-dashoffset" dur="5s" begin="svg4.click" values="314; 0" />
+        </circle>
+        <text id="count" x="50%" y="50%" fill="#717171" text-anchor="middle" dy="7" font-size="20" >Click4</text>
+    </svg>
+    <svg
+    id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   width="200" height="200" viewBox="0 0 120 120" >
+        <rect width="100%" height="100%" fill="#D0D0D0" />
+        <circle cx="60" cy="60" r="50" fill="none" stroke-width="8"stroke="#ffec00"/>
+        <circle cx="60" cy="60" r="50" fill="none" stroke-width="8"
+        transform="rotate(-90 60 60)"
+        stroke-dashoffset ="314"  stroke="dodgerblue" stroke-dasharray=" 2">
+        <animate attributeName="stroke-dashoffset" dur="5s" begin="svg5.click" values="314; 2000" />
+        </circle>
+        <text id="count" x="50%" y="50%" fill="#717171" text-anchor="middle" dy="7" font-size="20" >Click5</text>
+    </svg>
+</body>
+</html>

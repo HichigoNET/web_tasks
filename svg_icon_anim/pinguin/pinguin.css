@@ -1,0 +1,115 @@
+body{
+    padding: 0;
+    margin: 0;
+    display:flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+ }
+
+ path{
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+
+    animation-iteration-count: infinite;
+ }
+ path:not(.snow path){
+    stroke-width: 2;
+    animation-direction: alternate;
+    animation-name: all_str;
+    animation-duration: 2s;
+    animation-timing-function:ease;
+    }
+  .snow path{
+    stroke-width: 3;
+    /* animation-name: all_str; */
+    animation-name:all_str_snow ,snowt;
+    animation-direction: normal,normal;
+    animation-duration:4s;
+    animation-timing-function: ease-in-out;
+    top:0%
+    /* transform: scale(100); */
+    
+ }
+    @keyframes snowt   {
+      0%{
+          transform: translateX(1px);
+         /*transform: translateY(-5px);
+         transform: rotate(0deg); */
+
+         /* transform: matrix3d(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2); */
+        /* transform:translateX( 100px); */
+        /* transform:translateY(-50px); */
+        /* transform: rotate(0deg); */
+      }       
+      
+      100%{
+         /* transform: matrix3d(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2); */
+        /* transform:translateX( 100px); */
+          transform: translateX(-2000px);
+         /* transform:translateY(500px); */
+        /*transform: rotate(45deg); */
+        /* transform: rotate(0deg); */
+      }
+       /* 0%{
+          transform: rotate(0);
+       } */
+       /* 0%{
+          transform: scale(100);
+       }
+      100%{
+         
+      transform:rotate(120);
+      } */
+   }
+   @keyframes all_str_snow {
+      0%{
+         opacity: 0;
+      stroke-dashoffset: 0;
+         /* stroke-dashoffset: 0; */
+      /* fill-opacity: 1; */}
+  50%{
+     opacity: 1;
+  }
+   
+   100%{
+      opacity: 0;
+      /* fill-opacity: 0.2; */
+   }
+   }
+   @keyframes all_str {
+      0%{
+         /* stroke-dashoffset: 0; */
+      fill-opacity: 1;
+  
+   }
+   100%{
+      fill-opacity: 0.2;
+      stroke-dashoffset: 0;
+   }
+   }
+   /* @keyframes snowt   {
+      to{
+         
+      transform:rotate(90);
+      }
+   } */
+   /* @keyframes all_str {
+      10%{
+      fill-opacity: 1;
+  
+   }
+   50%{
+      
+      stroke-dashoffset: 0;
+   }
+   80%{
+     fill-opacity: 0.1;
+  
+   }
+   100%{
+      fill-opacity: 1;
+   }
+   } */
